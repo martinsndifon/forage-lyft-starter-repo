@@ -12,5 +12,4 @@ class SternmanEngine(Engine):
         """Returns true if the car needs service as shown by the warning light"""
         if self.warning_light_on:
             return True
-        else:
-            return False
+        return False

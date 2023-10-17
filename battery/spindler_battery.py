@@ -15,5 +15,4 @@ class SpindlerBattery(Battery):
         battery_threshold_date = add_years_to_date(self.last_service_date, 3)
         if battery_threshold_date < self.current_date:
             return True
-        else:
-            return False
+        return False
