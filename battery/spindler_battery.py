@@ -12,7 +12,7 @@ class SpindlerBattery(Battery):
 
     def needs_service(self):
         """Returns True if the battery needs servicing else false"""
-        battery_threshold_date = add_years_to_date(self.last_service_date, 2)
+        battery_threshold_date = add_years_to_date(self.last_service_date, 3)
         if battery_threshold_date < self.current_date:
             return True
         else:
